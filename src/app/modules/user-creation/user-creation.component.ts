@@ -30,7 +30,7 @@ export class UserCreationComponent implements OnInit, OnDestroy {
       name:['', Validators.required],
       lastName:['', Validators.required],
       email:['', Validators.required],
-      age:[0, Validators.required],
+      age:['', Validators.required],
     });
     this.id = this.route.snapshot.paramMap.get('id')!
   }
